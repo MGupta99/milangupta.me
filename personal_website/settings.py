@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'website',
         'USER': 'milangupta',
         'PASSWORD': 'M012599g!',
-        'HOST': 'localhost',
+        'HOST': 'milangupta.herokuapp.com',
         'PORT': '5432',
     }
 }
@@ -123,7 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(os.getcwd(), 'staticfiles/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.getcwd(), 'content', 'media')
