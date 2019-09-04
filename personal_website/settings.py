@@ -88,7 +88,7 @@ DATABASES = {
     }
 }
 
-DATABASES[‘default’].update(db_from_env)
+DATABASES['default'].update(db_from_env)
 
 # DATABASES = {
 #     'default': {
