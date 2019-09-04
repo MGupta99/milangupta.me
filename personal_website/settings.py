@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,6 +27,8 @@ SECRET_KEY = '4gt1kxpu9$u2*u)oubxyob6v#r2!(l%ca&)mrgu!6m9bajl1=3'
 DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', 'milangupta.herokuapp.com']
+
+db_from_env = dj_database_url.config()
 
 
 # Application definition
@@ -84,6 +87,8 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
+DATABASES[‘default’].update(db_from_env)
 
 # DATABASES = {
 #     'default': {
