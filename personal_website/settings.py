@@ -27,7 +27,7 @@ SECRET_KEY = '4gt1kxpu9$u2*u)oubxyob6v#r2!(l%ca&)mrgu!6m9bajl1=3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'milangupta.herokuapp.com', 'milangupta.me']
+ALLOWED_HOSTS = ['localhost', 'milangupta.herokuapp.com', 'www.milangupta.me']
 
 db_from_env = dj_database_url.config()
 
