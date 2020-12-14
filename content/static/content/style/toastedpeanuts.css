@@ -1,0 +1,270 @@
+/*
+ * University of Michigan
+ * EECS 493, Fall 2020
+ *
+ * style.css
+ * eecs493-final-project
+ *
+ * Copyright © 2020 Marina Caporuscio, Juliet Carpenter, Keegan Elliott, Milan Gupta. All rights reserved.
+ */
+
+
+#gameTitle {
+    font-size: 70px;
+    text-align: center;
+    vertical-align: center;
+    background-color: black;
+    color: white;
+    letter-spacing: 30px;
+    width: 100%;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 100px;
+}
+
+p {
+    font-size: 20px;
+
+}
+
+.introHeading {
+  font-size: 30px;
+}
+
+form {
+  overflow: hidden;
+}
+
+input {
+  float: right;
+  clear: both;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+}
+
+.introInput {
+  width: 400px;
+  font-size: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.inputError {
+  clear: both;
+  color: red;
+}
+
+#playbutton {
+    text-align: center;
+    font-size: 50px;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.introInputGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.teamInputs {
+  height: 500px;
+}
+
+.teamDetails {
+  width: 700px;
+  padding: 60px;
+  display: block;
+  position: relative;
+}
+
+.scoreboard {
+    position: relative;
+    width: 300px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+}
+
+#inputs1 {
+    left:0;
+}
+
+#inputs2 {
+    right:0;
+}
+
+.battle {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.winnerDiv {
+  position: relative;
+  top: 50px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.winner {
+  font-size:48px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.wheelImg {
+  width: 600px;
+  z-index: -1000;
+  position: relative;
+  top: -60px;
+}
+#wheeldiv {
+  padding-top:20px;
+}
+#wheel-buttons{
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.wheel-button {
+  z-index: 1000;
+  position: relative;
+}
+
+#wheelMarkerDiv {
+  display: flex;
+  justify-content: center;
+}
+
+#wheelMarker {
+  z-index: 999;
+  border-left: 15px solid black;
+  border-radius: 45%;
+  height: 50px;
+  width: 10px;
+  position: relative;
+}
+
+
+.rotate
+{
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: rotate(360deg);
+}
+
+.rotate0
+{
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: rotate(367.5deg);
+}
+.rotate1
+{
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: rotate(700deg);
+}
+.rotate2
+{
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: rotate(667.5deg);
+}
+.rotate3
+{
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: rotate(640.5deg);
+}
+.rotate4
+{
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: rotate(604.75deg);
+}
+.rotate5
+{
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: rotate(569.25deg);
+}
+.rotate6
+{
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: rotate(547.5deg);
+}
+.rotate7
+{
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: rotate(520.5deg);
+}
+.rotate8
+{
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: rotate(483.5deg);
+}
+.rotate9
+{
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: rotate(460.5deg);
+}
+.rotate10
+{
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: rotate(425deg);
+}
+.rotate11
+{
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transform: rotate(389.5deg);
+}
+
+#gamescreen {
+    width: 100%;
+    height: 1000px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 0;
+}
+
+#gameover {
+    width: 100vh;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -100;
+}
+
+#team1 {
+  border-right: 2px solid black;
+}
+
+#team2 {
+  border-left: 2px solid black;
+}

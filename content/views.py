@@ -24,3 +24,7 @@ def home(request):
 def image(request, path):
     image_data = open(os.path.join(os.getcwd(), 'content', request.path[1:])[:-1], "rb").read()
     return HttpResponse(image_data, content_type="image/jpeg")
+
+
+def toastedpeanuts(request):
+    return render(request, 'content/toastedpeanuts.html')
