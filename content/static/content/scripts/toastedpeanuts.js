@@ -334,7 +334,7 @@ Vue.component('wheel-component', {
 
 
           <div id="wheeldiv">
-            <img id="wheel" src="img/wheel.png" alt="Drinking Punishment Prize Wheel" class="wheelImg">
+            <img id="wheel" src="/static/content/images/wheel.png" alt="Drinking Punishment Prize Wheel" class="wheelImg">
           </div>
 
 
