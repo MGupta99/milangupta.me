@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '4gt1kxpu9$u2*u)oubxyob6v#r2!(l%ca&)mrgu!6m9bajl1=3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'milangupta.herokuapp.com', 'www.milangupta.me']
 
